@@ -5,13 +5,13 @@ import { getImageUrl } from "../../utils";
 import { Link, useNavigate } from "react-router-dom";
 
 function randomColor() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   function goToRandomColor() {
-    navigate("/dipesh-portfolio/RandomColor");
+    navigate("/RandomColor");
   }
 }
 
-export  const ProjectCard = ({
+export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
   return (
@@ -45,7 +45,7 @@ export  const ProjectCard = ({
             <div>Hero </div>
           </Link> */}
 
-          <Link to="/dipesh-portfolio/RandomColor" className={styles.link} onClick={randomColor}>
+          <Link to="/RandomColor" className={styles.link} onClick={randomColor}>
             Demo
           </Link>
           <a href={source} className={styles.link}>
@@ -57,4 +57,3 @@ export  const ProjectCard = ({
   );
 };
 export default ProjectCard;
-
