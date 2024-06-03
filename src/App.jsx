@@ -1,22 +1,23 @@
-import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
-import { Experience } from "./components/Experience/Experience";
-import { Hero } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
+
+import styles from './App.module.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage } from "./Pages/Homepage";
+import RandomColor from './Pages/RandomColor';
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-    </div>
+
+    <Router>
+      <div className={styles.App}>
+        <Routes>
+          <Route  exact path="/dipesh-portfolio/" element={<HomePage />} />
+          <Route  exact path="/dipesh-portfolio/RandomColor" element={<RandomColor />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+

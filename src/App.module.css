@@ -6,3 +6,7 @@
   height: 100%;
   overflow: hidden;
 }
+.contatiner {
+  width: 80%;
+  margin: auto;
+}
