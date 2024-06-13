@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Navbar } from "../components/Navbar/Navbar";
+import { Contact } from "../components/Contact/Contact";
+
+
+
 
 const RandomColor = () => {
   const [typeOfColor, setTypeOfColor] = useState("hex");
@@ -18,7 +22,13 @@ const RandomColor = () => {
     setColor(hexColor);
   }
 
-  function handleCreateRandomRgbColor() {}
+  function handleCreateRandomRgbColor() {
+    const r = randomColorUtility(256);
+    const g = randomColorUtility(256);
+    const b = randomColorUtility(256);
+
+    setColor(`rgb(${r},${g}, ${b})`);
+  }
 
   useEffect(() => {
     if (typeOfColor === "rgb") handleCreateRandomRgbColor();
@@ -29,57 +39,71 @@ const RandomColor = () => {
     <div>
       {" "}
       <Navbar />
-      <div className="contatiner">
-        <div className="inner">
-          <div
-            style={{
-              width: "100%",
-              height: "400px",
-              background: color,
-            }}
-          >
-            <div className="inner-layout">
-              <button onClick={() => setTypeOfColor("hex")}>
-                Create HEX Color
-              </button>
-              <button onClick={() => setTypeOfColor("rgb")}>
-                Create RGB Color
-              </button>
-              <button
-                onClick={
-                  typeOfColor === "hex"
-                    ? handleCreateRandomHexColor
-                    : handleCreateRandomRgbColor
-                }
-              >
-                Generate Random Color
-              </button>
+      <div className="layout">
+        <div className="topsection">
+          <div className="container">
+            <div className="inner">
               <div
                 style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  color: "#fff",
-                  fontSize: "60px",
-                  marginTop: "50px",
-                  flexDirection: "column",
-                  gap: "20px",
+                  width: "100%",
+                  height: "400px",
+                  background: color,
                 }}
               >
-                <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
-                <h1>{color}</h1>
+                <div className="inner-layout">
+                  <button
+                    className="buttonclass"
+                    onClick={() => setTypeOfColor("hex")}
+                  >
+                    Create HEX Color
+                  </button>
+                  <button
+                    className="buttonclass"
+                    onClick={() => setTypeOfColor("rgb")}
+                  >
+                    Create RGB Color
+                  </button>
+                  <button
+                    className="buttonclass"
+                    onClick={
+                      typeOfColor === "hex"
+                        ? handleCreateRandomHexColor
+                        : handleCreateRandomRgbColor
+                    }
+                  >
+                    Generate Random Color
+                  </button>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#fff",
+                      fontSize: "40px",
+                      marginTop: "50px",
+                      flexDirection: "column",
+                      gap: "20px",
+                    }}
+                  >
+                    <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
+                    <h1>{color}</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="learnings">
+          <h1>Learnings</h1>
+          <ol>
+            <li>learned one</li>
+
+            <li>learned one</li>
+            <li>learned one</li>
+          </ol>
+        </div>
       </div>
-      <div>
-        <h1>Details</h1>
-        <ul>
-          <li>learning 1</li>
-          <li>learning 2</li>
-        </ul>
-      </div>
+      <Contact />
     </div>
   );
 };
