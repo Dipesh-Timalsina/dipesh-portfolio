@@ -6,6 +6,14 @@ import { Outlet } from "react-router-dom";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <nav className={styles.navbar}>
@@ -28,16 +36,27 @@ export const Navbar = () => {
             onClick={() => setMenuOpen(false)}
           >
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a
+                href="#experience"
+                onClick={(e) => handleScroll(e, "experience")}
+              >
+                Experience
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+                Contact
+              </a>
             </li>
           </ul>
         </div>

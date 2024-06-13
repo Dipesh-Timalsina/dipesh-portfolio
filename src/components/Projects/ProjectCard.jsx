@@ -4,12 +4,12 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 import { Link, useNavigate } from "react-router-dom";
 
-function randomColor() {
-  const navigate = useNavigate();
-  function goToRandomColor() {
-    navigate("/RandomColor");
-  }
-}
+// function randomColor() {
+//   const navigate = useNavigate();
+//   function goToRandomColor() {
+//     navigate("/RandomColor");
+//   }
+// }
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
@@ -33,19 +33,9 @@ export const ProjectCard = ({
             );
           })}
         </ul>
+        <h1>{demo}</h1>
         <div className={styles.links}>
-          {/* <a href="randon-color" className={styles.link}>
-            Demo
-          </a> */}
-          {/* <Link to="/dipesh-portfolio/RandomColor" className={styles.link}>
-            <div>Hero </div>
-          </Link> */}
-
-          {/* <Link to="/dipesh-portfolio/RandomColor" className={styles.link}>
-            <div>Hero </div>
-          </Link> */}
-
-          <Link to="/RandomColor" className={styles.link} onClick={randomColor}>
+          <Link to={demo} className={styles.link} onClick={demo}>
             Demo
           </Link>
           <a href={source} className={styles.link}>
