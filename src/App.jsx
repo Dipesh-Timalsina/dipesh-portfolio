@@ -14,6 +14,7 @@ import menus from "./Pages/tree-view/data";
 import CustomTabTest from "./Pages/CustomTabs/customTabTest";
 import ModalTest from "./Pages/CustomModel/modaltest";
 import GithubProfileFinder from "./Pages/github-profile-finder";
+import SearchAutocomplete from "./Pages/searchautocomplete";
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/LightDarkMode" element={<LightDarkMode />} />
           <Route path="/CustomTab" element={<CustomTabTest />} />
           <Route path="/CustomModel" element={<ModalTest />} />
+          <Route path="/SearchAutocomplete" element={<SearchAutocomplete />} />
           <Route
             path="/GitHubProfileFinder"
             element={<GithubProfileFinder />}

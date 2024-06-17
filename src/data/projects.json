@@ -48,7 +48,7 @@
     "source": "https://www.github.com"
   },
   {
-    "title": "Project F",
+    "title": "Project G",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
@@ -56,11 +56,19 @@
     "source": "https://www.github.com"
   },
   {
-    "title": "Project F",
+    "title": "Project H",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
     "demo": "GitHubProfileFinder",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Project I",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "demo": "SearchAutocomplete",
     "source": "https://www.github.com"
   }
 ]
