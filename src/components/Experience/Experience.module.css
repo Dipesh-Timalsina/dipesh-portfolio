@@ -18,12 +18,12 @@
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 14px;
 }
 
 .skills {
-  width: 45%;
+ 
   display: flex;
   flex-wrap: wrap;
   gap: 37px;

@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import data from "./data";
 import "./style.css";
-import { Navbar } from "../../components/Navbar/Navbar";
-import { Contact } from "../../components/Contact/Contact";
+
 
 export default function Accordian() {
   const [selected, setSelected] = useState(null);
@@ -37,8 +36,6 @@ export default function Accordian() {
   console.log(selected, multiple);
     return (
       <>
-        <Navbar />
-
         <div className="layout">
           <div className="topsection">
             <div>
@@ -102,14 +99,26 @@ export default function Accordian() {
           <div className="learnings">
             <h1>Learnings</h1>
             <ol>
-              <li>learned one</li>
+              <li>
+                Learned to use the useState hook for managing local state in a
+                functional component.
+              </li>
 
-              <li>learned one</li>
-              <li>learned one</li>
+              <li>
+                Learned to conditionally render content based on the state.
+              </li>
+              <li>
+                Implemented event handlers like handleSingleSelection,
+                handleMultiSelection, and handleToggle to manage user
+                interactions.
+              </li>
+              <li>
+                Learned to implement toggle functionality for enabling/disabling
+                multi-selection mode.
+              </li>
             </ol>
           </div>
         </div>
-        <Contact />
       </>
     );
 }

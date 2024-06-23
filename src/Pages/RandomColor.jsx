@@ -37,8 +37,6 @@ const RandomColor = () => {
 
   return (
     <div>
-      {" "}
-      <Navbar />
       <div className="layout">
         <div className="topsection">
           <div className="container">
@@ -96,14 +94,23 @@ const RandomColor = () => {
         <div className="learnings">
           <h1>Learnings</h1>
           <ol>
-            <li>learned one</li>
+            <li>
+              Learned to use the useState hook for managing component state,
+              including typeOfColor and color.
+            </li>
 
-            <li>learned one</li>
-            <li>learned one</li>
+            <li>
+              Developed functions to generate random colors in both HEX
+              (handleCreateRandomHexColor) and RGB (handleCreateRandomRgbColor)
+              formats
+            </li>
+            <li>
+              Implemented conditional logic within useEffect to generate a color
+              based on the typeOfColor state.
+            </li>
           </ol>
         </div>
       </div>
-      <Contact />
     </div>
   );
 };

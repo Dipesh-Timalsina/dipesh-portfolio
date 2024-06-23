@@ -53,7 +53,6 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
 
   return (
     <>
-      <Navbar />
       <div className="layout">
         <div className="topsection">
           <div className="container">
@@ -96,10 +95,25 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
             </span>
           </div>
         </div>
+        <div className="learnings">
+          <h1>Learnings</h1>
+          <ol>
+            <li>
+              Utilized the useState hook to manage local state variables such as
+              images, currentSlide, errorMsg, and loading.
+            </li>
+
+            <li>
+              Used the useEffect hook to fetch data from an API when the
+              component mounts or when the url changes.
+            </li>
+            <li>
+              Incorporated error handling within the fetchImages function to
+              catch and display error messages if the API request fails.
+            </li>
+          </ol>
+        </div>
       </div>
-      <Contact/>
-    
     </>
-      
   );
 }

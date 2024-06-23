@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
-import { Contact } from "../../components/Contact/Contact";
-import { Navbar } from "../../components/Navbar/Navbar";
+
 
 function Square({ value, onClick }) {
   return (
@@ -68,7 +67,6 @@ export default function TicTacToe() {
 
   return (
     <>
-      <Navbar />
       <div className="layout">
         <div className="topsection">
           <div className="tic-tac-toe-container">
@@ -93,8 +91,30 @@ export default function TicTacToe() {
             </button>
           </div>
         </div>
+
+        <div className="learnings">
+          <h1>Learnings</h1>
+          <ol>
+            <li>
+              Utilized useState hook to manage three main states: squares (for
+              storing the state of each square in the tic-tac-toe grid), isXTurn
+              (to track whose turn it is - X or O), and status (to display game
+              status messages).
+            </li>
+
+            <li>
+              Implemented handleClick function to handle square clicks. It
+              updates the squares array based on the current player (X or O) and
+              toggles turns using isXTurn.
+            </li>
+            <li>
+              Implemented getWinner function to check winning conditions based
+              on predefined winning patterns (rows, columns, diagonals). It
+              returns the winning player (X or O) or null if there is no winner.
+            </li>
+          </ol>
+        </div>
       </div>
-      <Contact />
     </>
   );
 }

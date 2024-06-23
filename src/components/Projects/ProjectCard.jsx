@@ -33,7 +33,7 @@ export const ProjectCard = ({
             );
           })}
         </ul>
-        <h1>{demo}</h1>
+      
         <div className={styles.links}>
           <Link to={demo} className={styles.link} onClick={demo}>
             Demo

@@ -1,82 +1,98 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
+    "title": "Random Color",
+    "imageSrc": "projects/Project5.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "RandomColor",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
+    "title": "Accordian",
+    "imageSrc": "projects/Project2.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "skills": ["React"],
     "demo": "Accordian",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
+    "title": "Image-Slider",
+    "imageSrc": "projects/Project3.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "ImageSlider",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project D",
-    "imageSrc": "projects/project.png",
+    "title": "Light-dark Mode",
+    "imageSrc": "projects/Project4.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "LightDarkMode",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project E",
-    "imageSrc": "projects/project.png",
+    "title": "Tree View",
+    "imageSrc": "projects/project6.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "TreeView",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project F",
-    "imageSrc": "projects/project.png",
+    "title": "CustomTab",
+    "imageSrc": "projects/customtab.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "CustomTab",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project G",
-    "imageSrc": "projects/project.png",
+    "title": "CustomModel",
+    "imageSrc": "projects/custommodal.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "CustomModel",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project H",
-    "imageSrc": "projects/project.png",
+    "title": "GitHubProfileFinder",
+    "imageSrc": "projects/git.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "GitHubProfileFinder",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project I",
-    "imageSrc": "projects/project.png",
+    "title": "SearchAutocomplete",
+    "imageSrc": "projects/autocomplete.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "SearchAutocomplete",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project j",
-    "imageSrc": "projects/project.png",
+    "title": "TicTacToe",
+    "imageSrc": "projects/tictactoe.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "skills": ["React"],
     "demo": "TicTacToe",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "FeatureFlagGlobalState",
+    "imageSrc": "projects/image8.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React"],
+    "demo": "FeatureFlagGlobalState",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "UseFetchHookTest",
+    "imageSrc": "projects/fetch.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React"],
+    "demo": "UseFetchHookTest",
     "source": "https://www.github.com"
   }
 ]

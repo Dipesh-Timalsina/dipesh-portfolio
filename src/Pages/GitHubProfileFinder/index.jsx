@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import User from "./user";
 import "./styles.css";
-import { Contact } from "../../components/Contact/Contact";
-import { Navbar } from "../../components/Navbar/Navbar";
+
 
 export default function GithubProfileFinder() {
   const [userName, setUserName] = useState("");
@@ -36,8 +35,6 @@ export default function GithubProfileFinder() {
 
     return (
       <>
-        <Navbar />
-
         <div className="layout">
           <div className="topsection">
             <div className="github-profile-container">
@@ -54,8 +51,36 @@ export default function GithubProfileFinder() {
               {userData !== null ? <User user={userData} /> : null}
             </div>
           </div>
+          <div className="learnings">
+            <h1>Learnings</h1>
+            <ol>
+              <li>
+                Used the useState hook to manage three different states:
+                userName, userData, and loading. userName stores the input value
+                for the GitHub username search.
+              </li>
+
+              <li>
+                Implemented fetchGithubUserData function to fetch GitHub user
+                data asynchronously using fetch API.
+              </li>
+              <li>
+                Utilized useEffect hook with an empty dependency array ([]) to
+                fetch user data when the component mounts (componentDidMount
+                equivalent).
+              </li>
+              <li>
+                Managed user input using an input element and controlled it
+                using React state userName.
+              </li>
+              <li>
+                Implemented handleSubmit function to initiate the GitHub API
+                request when the "Search" button is clicked.
+              </li>
+            </ol>
+          </div>
         </div>
-        <Contact />
+      
       </>
     );
 }

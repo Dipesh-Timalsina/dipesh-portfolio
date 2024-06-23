@@ -1,5 +1,6 @@
 .wrapper{
     padding : 8px;
+    color:#fff
 
 }
 .heading{
@@ -16,11 +17,11 @@
     cursor: pointer;
     border: none;
     color: #fff;
-    background: #4e016a;
+    background: #c7bbcb;
 
 }
 .tab-item.active{
-    border-color: #000;
+    border-color: #d23131;
     background:#a1b600;
     color: #fff;
 }

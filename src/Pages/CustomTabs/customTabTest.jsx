@@ -1,5 +1,5 @@
 import CustomTab from "./customtab";
-import "./customtab"
+import "./customtab.css"
 export default function CustomTabTest() {
   const tabs = [
     {
