@@ -94,5 +94,13 @@
     "skills": ["React"],
     "demo": "UseFetchHookTest",
     "source": "https://www.github.com"
+  },
+  {
+    "title": "WeatherApp",
+    "imageSrc": "projects/fetch.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React"],
+    "demo": "Weather",
+    "source": "https://www.github.com"
   }
 ]

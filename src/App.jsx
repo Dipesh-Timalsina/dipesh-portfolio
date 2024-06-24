@@ -20,6 +20,7 @@ import FeatureFlags from "./Pages/feature-flag";
 import SearchAutocomplete from "./Pages/searchautocomplete";
 import Layout from "./Pages/layout";
 import UseFetchHookTest from "./Pages/use-fetch/test";
+import Weather from "./Pages/WeatherApp/weather";
 
 
 
@@ -64,6 +65,7 @@ function App() {
               element={<GithubProfileFinder />}
             />
             <Route path="/UseFetchHookTest" element={<UseFetchHookTest />} />
+            <Route path="/Weather" element={<Weather />} />
           </Route>
         </Routes>
       </div>
