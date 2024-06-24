@@ -6,7 +6,7 @@ import { Projects } from "../components/Projects/Projects";
 
 // Define HomePage component
 const HomePage = () => {
-   console.log("HomePage rendered");
+   
   return (
     <div>
       <Hero />

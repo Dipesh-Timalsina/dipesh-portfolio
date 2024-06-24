@@ -17,9 +17,9 @@ export const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.title} onClick={() => window.location.href = "/"}>
+        <a className={styles.title} href="/">
           Portfolio
-        </div>
+        </a>
         <div className={styles.menu}>
           <img
             className={styles.menuBtn}
