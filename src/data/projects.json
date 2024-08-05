@@ -97,7 +97,7 @@
   },
   {
     "title": "WeatherApp",
-    "imageSrc": "projects/fetch.png",
+    "imageSrc": "projects/weather.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React"],
     "demo": "Weather",
